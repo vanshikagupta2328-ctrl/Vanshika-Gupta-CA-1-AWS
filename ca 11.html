@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ChatGPT</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #212121;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .main {
+            width: 100%;
+            height: 100vh;
+        }
+        /* Sidebar */
+        
+        .left {
+            width: 250px;
+            height: 100vh;
+            background-color: #171717;
+            float: left;
+        }
+        
+        .newchat {
+            width: 210px;
+            height: 40px;
+            background-color: #303030;
+            margin: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        
+        .heading {
+            color: #999999;
+            margin: 20px;
+            font-size: 13px;
+        }
+        
+        .history {
+            width: 210px;
+            padding: 12px;
+            margin-left: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .history:hover {
+            background-color: #303030;
+        }
+        
+        .profile {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            width: 210px;
+            padding: 12px;
+            border-top: 1px solid #444444;
+        }
+        /* Main chat area */
+        
+        .right {
+            height: 100vh;
+            margin-left: 250px;
+        }
+        
+        .header {
+            height: 50px;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+        .content {
+            text-align: center;
+            padding-top: 100px;
+        }
+        
+        .welcome {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+        
+        .suggestion {
+            width: 180px;
+            padding: 15px;
+            margin: 5px;
+            display: inline-block;
+            border: 1px solid #444444;
+            border-radius: 12px;
+            color: #cccccc;
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .help {
+            width: 60%;
+            height: 55px;
+            background-color: #303030;
+            margin: 50px auto 0;
+            padding: 10px 15px;
+            border: 1px solid #444444;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+        
+        .message {
+            width: 85%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 15px;
+        }
+        
+        .send {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        
+        .note {
+            color: #888888;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="left">
+
+            <div class="newchat">＋ New chat</div>
+
+            <div class="heading">Today</div>
+
+            <div class="history">HTML and CSS basics</div>
+            <div class="history">Create a website</div>
+            <div class="history">Learn JavaScript</div>
+            <div class="history">Interview preparation</div>
+
+            <div class="heading">Previous 7 days</div>
+
+            <div class="history">Website design ideas</div>
+            <div class="history">Learn programming</div>
+            <div class="history">My project</div>
+
+            <div class="profile">👤 My Profile</div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="header">ChatGPT</div>
+
+            <div class="content">
+
+                <div class="welcome">
+                    What can I help with?
+                </div>
+
+                <div class="suggestion">
+                    💡 Get advice
+                </div>
+
+                <div class="suggestion">
+                    ✍️ Write something
+                </div>
+
+                <div class="suggestion">
+                    💻 Code something
+                </div>
+
+                <div class="suggestion">
+                    📚 Learn something
+                </div>
+
+                <div class="help">
+
+                    <input class="message" type="text" placeholder="Message ChatGPT">
+
+                    <button class="send">↑</button>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
